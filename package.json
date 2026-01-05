@@ -1,0 +1,29 @@
+{
+  "name": "veridian-workspace",
+  "version": "1.0.0",
+  "description": "Veridian - Pollution Analysis & Prediction Platform Workspace",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspace=frontend",
+    "start": "npm run start --workspace=frontend",
+    "lint": "npm run lint --workspace=frontend",
+    "backend": "cd backend && uvicorn app.main:app --reload",
+    "dev:all": "concurrently \"npm run dev\" \"npm run backend\""
+  },
+  "keywords": [
+    "pollution",
+    "prediction",
+    "ml",
+    "environment",
+    "bio-urban-trees"
+  ],
+  "author": "Dharmesh Priyadarshi",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

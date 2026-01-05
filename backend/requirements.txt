@@ -1,0 +1,47 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-dotenv==1.0.1
+pydantic==2.10.5
+pydantic-settings==2.7.1
+
+# Database
+sqlalchemy==2.0.36
+asyncpg==0.30.0
+psycopg2-binary==2.9.10
+
+# ML & Data Science
+tensorflow==2.18.0
+scikit-learn==1.6.1
+pandas==2.2.3
+numpy==2.2.2
+joblib==1.4.2
+keras==3.8.0
+
+# Data Processing
+pillow==11.1.0
+matplotlib==3.10.0
+seaborn==0.13.2
+
+# API & HTTP
+httpx==0.28.1
+aiohttp==3.11.11
+python-multipart==0.0.20
+
+# Authentication
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.2.1
+
+# Utilities
+python-dateutil==2.9.0.post0
+pytz==2024.2
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.25.2
+pytest-cov==6.0.0
+
+# Development
+black==24.10.0
+flake8==7.1.1
+mypy==1.14.1
