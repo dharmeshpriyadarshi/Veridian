@@ -38,10 +38,10 @@ export default function HomePage() {
               </Link>
             </nav>
             <div className="flex items-center space-x-2">
-              <Link href="/auth/signin">
+              <Link href="/signin">
                 <Button variant="ghost">Sign In</Button>
               </Link>
-              <Link href="/auth/signup">
+              <Link href="/signup">
                 <Button className="gradient-veridian">Get Started</Button>
               </Link>
             </div>

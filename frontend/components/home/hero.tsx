@@ -23,7 +23,7 @@ export function Hero() {
         </p>
 
         <div className="flex gap-4 mt-8">
-          <Link href="/auth/signup">
+          <Link href="/signup">
             <Button size="lg" className="gradient-veridian">
               Get Started Free
               <ArrowRight className="ml-2 h-4 w-4" />
