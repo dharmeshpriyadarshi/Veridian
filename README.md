@@ -4,6 +4,14 @@
 
 Veridian is an advanced multi-page platform that analyzes real-time pollution data and generates predictions for future pollution levels. The platform simulates the impact of bio-urban trees (algae-treated water plants that release 10x more oxygen than natural trees) on pollution reduction.
 
+## 🎉 **100% FREE & OPEN SOURCE - NO API KEYS REQUIRED!**
+
+✅ No Mapbox API key needed - Uses **OpenStreetMap** with **Leaflet** (completely free!)  
+✅ No OpenWeather API key needed - Uses **mock data** and **open datasets**  
+✅ No payment, no sign-up, no external services!  
+✅ Works offline for development  
+✅ Perfect for students and academic projects!
+
 ## ✨ Key Features
 
 ### 1. Real-Time Pollution Monitoring
@@ -41,7 +49,7 @@ Veridian is an advanced multi-page platform that analyzes real-time pollution da
 - **Next.js 14** (App Router) with TypeScript
 - **React 18** with Server Components
 - **Tailwind CSS** + **shadcn/ui** for modern UI
-- **Mapbox GL JS** for map visualization
+- **Leaflet + OpenStreetMap** for map visualization (FREE, no API key!)
 - **Chart.js / Recharts** for data visualization
 - **NextAuth.js** for authentication
 - **React Query** for data fetching
@@ -104,11 +112,19 @@ veridian/
 
 ## 🚀 Getting Started
 
+### 📚 **Quick Start Guides** (Choose Your Level)
+
+1. **[SIMPLE_GUIDE.md](SIMPLE_GUIDE.md)** - ⭐ **START HERE!** Perfect for beginners
+2. **[HOW_TO_USE.md](HOW_TO_USE.md)** - Complete detailed usage guide
+3. **[CHEATSHEET.md](CHEATSHEET.md)** - Quick reference for all commands
+4. **[QUICKSTART.md](QUICKSTART.md)** - Fast setup for experienced developers
+
 ### Prerequisites
 - Node.js 18+ and npm/yarn
 - Python 3.10+
 - PostgreSQL 14+
 - Git
+- **NO API keys needed!** 🎉
 
 ### Installation
 
@@ -141,21 +157,21 @@ uvicorn app.main:app --reload
 4. **Database Setup**
 ```bash
 cd frontend
-npx prisma generate
-npx prisma db push
-```
-
-## 🔑 Environment Variables
-
-### Frontend (.env.local)
-```env
-DATABASE_URL="postgresql://..."
-NEXTAUTH_SECRET="..."
+npx prisma generatepostgres:your_password@localhost:5432/veridian"
+NEXTAUTH_SECRET="any-random-long-string-min-32-chars"
 NEXTAUTH_URL="http://localhost:3000"
-MAPBOX_ACCESS_TOKEN="..."
 NEXT_PUBLIC_API_URL="http://localhost:8000"
 ```
 
+### Backend (.env)
+```env
+DATABASE_URL="postgresql://postgres:your_password@localhost:5432/veridian"
+SECRET_KEY="any-random-long-string-min-32-chars"
+ALGORITHM="HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES=10080
+```
+
+**That's it! No external API keys needed!** 🎉
 ### Backend (.env)
 ```env
 DATABASE_URL="postgresql://..."
