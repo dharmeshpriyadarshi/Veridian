@@ -3,16 +3,15 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['api.mapbox.com', 'openweathermap.org'],
+    domains: ['tile.openstreetmap.org'],
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '**.mapbox.com',
+        hostname: '**.openstreetmap.org',
       },
     ],
   },
   env: {
-    MAPBOX_ACCESS_TOKEN: process.env.MAPBOX_ACCESS_TOKEN,
     NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
   },
   experimental: {

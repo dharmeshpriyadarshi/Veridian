@@ -22,10 +22,6 @@ class Settings(BaseSettings):
         "http://127.0.0.1:3000",
     ]
     
-    # External APIs
-    OPENWEATHER_API_KEY: str = ""
-    OPENWEATHER_BASE_URL: str = "https://api.openweathermap.org/data/2.5"
-    
     # ML Models
     MODEL_PATH: str = "./ml-models"
     PREDICTION_MODEL_NAME: str = "pollution_prediction_model.h5"
